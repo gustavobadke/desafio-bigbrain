@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigBrain.UI.AspNetMVC", "BigBrain.UI.AspNetMVC\BigBrain.UI.AspNetMVC.csproj", "{E5BD6C61-C9B9-424B-9CB3-DF59DBF1F0D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigBrain.Domain", "BigBrain.Domain\BigBrain.Domain.csproj", "{E3615262-3BEE-46DA-A78B-17941F3F2AD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigBrain.Domain", "BigBrain.Domain\BigBrain.Domain.csproj", "{E3615262-3BEE-46DA-A78B-17941F3F2AD9}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "BigBrain.UI.React", "BigBrain.UI.React\BigBrain.UI.React.njsproj", "{2F74AECA-E20A-415F-BF0E-91BBDF884545}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigBrain.Api", "BigBrain.Api\BigBrain.Api.csproj", "{B457FF5A-B964-493D-B83B-95EB81BF42D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{E3615262-3BEE-46DA-A78B-17941F3F2AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3615262-3BEE-46DA-A78B-17941F3F2AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3615262-3BEE-46DA-A78B-17941F3F2AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F74AECA-E20A-415F-BF0E-91BBDF884545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F74AECA-E20A-415F-BF0E-91BBDF884545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F74AECA-E20A-415F-BF0E-91BBDF884545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F74AECA-E20A-415F-BF0E-91BBDF884545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B457FF5A-B964-493D-B83B-95EB81BF42D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B457FF5A-B964-493D-B83B-95EB81BF42D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B457FF5A-B964-493D-B83B-95EB81BF42D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B457FF5A-B964-493D-B83B-95EB81BF42D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
