@@ -1,0 +1,50 @@
+@model BigBrain.ViewModels.UsersListViewModel
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <section class="container">
+        <h1>Desafio BigBrain :: Usuarios</h1>
+        <hr>
+
+        <div class="card border-secondary mb-3">
+            <div class="card-header">Filtro</div>
+            <div class="card-body text-secondary">
+                <form action="?" method="get">
+                    <div class="row">
+                        <div class="col">
+                            @Html.TextBoxFor(h => h.SearchName, new { placeholder = "Buscar por nome", @class="form-control" })
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary">Buscar</button>
+
+                            @if (!string.IsNullOrWhiteSpace(Model.SearchName))
+                            {
+                                <button type="submit" class="btn btn-danger" onclick="document.getElementById('SearchName').value = ''">Limpar Busca</button>
+                            }
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            @foreach (var item in Model.Users)
+            {
+                <div class="col-md-4 col-sm-6 col-12 mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-truncate" title="@item.DisplayName">@item.DisplayName</h5>
+                            <h6 class="card-subtitle text-muted text-truncate" title="@item.Mail">@item.Mail</h6>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+</body>
+</html>
